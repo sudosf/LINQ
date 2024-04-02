@@ -9,7 +9,7 @@
 			int startIndex = 1;
 			int endIndex = 10;
 
-			Console.WriteLine("Sum: " + Methods.ListRangeSumExclusive(numbers, startIndex, endIndex));
+			Console.WriteLine("Sum: " + Methods.ParallelListRangeSumExclusive(numbers, startIndex, endIndex));
 		}
 	}
 }
