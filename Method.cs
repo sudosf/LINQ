@@ -10,5 +10,10 @@ namespace LINQ {
       ClassName = "Method class";
     }
 
+    public int rangeSum(List<int> numbers, int a, int b) {
+
+      return numbers.Where(num => num > a && num < b).Sum();
+    }
+
   }
 }
