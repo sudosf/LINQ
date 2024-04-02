@@ -2,11 +2,14 @@
 	internal class Program {
 		private static void Main(string[] args) {
 
-			Method method = new();
+			Methods method = new();
 
-			List<int> numbers = new List<int> { 10, 20, 30, 40, 50 };
+			List<int> numbers = Enumerable.Repeat(1, 10).ToList();
 
-			Console.WriteLine("Sum: " + method.rangeSum(numbers, 1, 100));
+			int startIndex = 1;
+			int endIndex = 10;
+
+			Console.WriteLine("Sum: " + Methods.ListRangeSumExclusive(numbers, startIndex, endIndex));
 		}
 	}
 }
